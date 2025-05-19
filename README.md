@@ -10,7 +10,7 @@ This repository includes:
 
 | Folder/File | Description |
 |-------------|-------------|
-| `01_basics/` | Introduction to HTML, structure of an HTML document, tags, and elements. |
+| `01_Basics/` | Introduction to HTML, structure of an HTML document, tags, and elements. |
 | `02_Configuring colour and text/` | Learn about headings, paragraphs, bold, italic, lists, and more. |
 | `03_Adding visual elements/` | Learn how to add hyperlinks and display images. |
 | `04_tables/` | Understand how to create tables in HTML. |
