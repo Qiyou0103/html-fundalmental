@@ -37,4 +37,4 @@ To view the HTML files locally:
 
 1. **Clone this repo**  
    ```bash
-   git clone [https://github.com/your-username/html-fundamentals.git](https://github.com/Qiyou0103/html-fundalmental.git)
+   git clone https://github.com/your-username/html-fundamentals.git](https://github.com/Qiyou0103/html-fundalmental.git)](https://github.com/Qiyou0103/html-fundalmental.git)
