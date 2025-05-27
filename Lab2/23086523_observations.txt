@@ -1,0 +1,115 @@
+Task 1: Inline Styling
+What I did:
+
+Added inline styles to <body> (off-white background, teal text) and <h1> (teal background, off-white text).
+
+Made one paragraph inherit styles and another override text color.
+
+What happened:
+
+First paragraph followed body styles.
+
+Second paragraph had gray text instead of teal.
+
+Why:
+
+Inline styles override inherited styles.
+
+Conclusion:
+
+Good for quick fixes but messy for big projects.
+
+Task 2: Embedded CSS
+What I did:
+
+Used <style> in <head> to style body, h1, and h2 with purple colors.
+
+What happened:
+
+Whole page turned purple-themed.
+
+No need to repeat styles for each h2.
+
+Why:
+
+Embedded CSS applies to the whole page.
+
+Conclusion:
+
+Better than inline but still not reusable across pages.
+
+Task 3: Font Styling
+What I did:
+
+Changed fonts, added shadows to h1, centered h2, and indented paragraphs.
+
+What happened:
+
+Text looked cleaner and more professional.
+
+Why:
+
+CSS properties like text-shadow improve design.
+
+Conclusion:
+
+Small changes make a big difference.
+
+Task 4: Class Selectors
+What I did:
+
+Made classes (.nav, .feature, .footer) to style navigation, list items, and footer.
+
+Used <span class="company"> to style just the company name.
+
+What happened:
+
+Navigation got bigger/bolder, some list items turned red, footer got smaller/italic.
+
+Company name stood out.
+
+Why:
+
+Classes let you reuse styles.
+
+Conclusion:
+
+Saves time and keeps styling consistent.
+
+Task 5: ID Selectors
+What I did:
+
+Used IDs (#item1, #item2) to style list items differently.
+
+Tried using the same ID twice (invalid).
+
+What happened:
+
+Each item had unique colors.
+
+Browser still applied styles when ID was reused, but it’s wrong.
+
+Why:
+
+IDs must be unique (one per page).
+
+Conclusion:
+
+Use IDs for one-time styles, classes for reuse.
+
+Extra: Multiple Classes
+What I did:
+
+Gave one element two classes (class="nav feature").
+
+What happened:
+
+It combined styles from both classes.
+
+Why:
+
+Multiple classes work together.
+
+Conclusion:
+
+Useful for mixing styles.
