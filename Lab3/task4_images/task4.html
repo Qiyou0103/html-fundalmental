@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 3 - Background Tests (12 Cases)</title>
+  <meta charset="UTF-8"> 
+  <style>
+    body { 
+      font-family: Arial; 
+      margin: 0;
+      padding: 20px;
+    }
+    .test-case {
+      height: 200px;
+      margin: 15px;
+      padding: 15px;
+      border: 2px dashed #333;
+      color: white;
+      text-shadow: 0 0 5px black;
+    }
+
+   
+#case1 { background-image: url("01.svg"); }
+#case2 { background-image: url("02.svg"); }
+#case3 { background-image: url("03.svg"); }
+#case4 { background-image: url("04.svg"); }
+#case5 { background-image: url("05.svg"); }
+#case6 { background-image: url("06.svg"); }
+
+#case7 { 
+  background-image: url("07.svg");
+  background-size: 100%;
+}
+#case8 { 
+  background-image: url("08.svg");
+  background-size: 100%;
+}
+#case9 { 
+  background-image: url("09.svg");
+  background-size: 100%;
+}
+#case10 { 
+  background-image: url("10.svg");
+  background-size: 100%;
+}
+#case11 { 
+  background-image: url("11.svg");
+  background-size: 100%;
+}
+#case12 { 
+  background-image: url("12.svg");
+  background-size: 100%;
+}
+  </style>
+</head>
+
+<body>
+
+   
+  <div class="test-case" id="case1">10×10 (default tiling)</div>
+  <div class="test-case" id="case2">10×20 (default tiling)</div>
+  <div class="test-case" id="case3">10×200 (default tiling)</div>
+  <div class="test-case" id="case4">100×50 (default tiling)</div>
+  <div class="test-case" id="case5">100×100 (default tiling)</div>
+  <div class="test-case" id="case6">10×2000 (default tiling)</div>
+  <div class="test-case" id="case7">10×10 (size:100%)</div>
+  <div class="test-case" id="case8">10×20 (size:100%)</div>
+  <div class="test-case" id="case9">10×200 (size:100%)</div>
+  <div class="test-case" id="case10">100×50 (size:100%)</div>
+  <div class="test-case" id="case11">100×100 (size:100%)</div>
+  <div class="test-case" id="case12">10×2000 (size:100%)</div>
+</body>
+</html>

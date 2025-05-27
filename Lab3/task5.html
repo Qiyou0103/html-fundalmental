@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 3 - Task 5</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    
+    h1 {
+      padding: 15px;
+      color: rgb(143, 24, 24);
+      text-shadow: 0 0 3px black;
+    }
+    
+    .special-paragraph {
+      padding: 20px;
+      border-left: 5px solid #3c076d;
+    }
+    
+    #heading-bg {
+  background-image: url("05.svg");
+  
+  
+  background-repeat: repeat;
+  
+  
+  background-position: right center;
+  
+ 
+  padding-left: 120px;
+}
+    #paragraph-bg {
+      background-image: url("05.svg");
+      background-repeat: repeat;
+      background-position: left center;
+      padding-right: 120px;
+    }
+
+    #heading-bg {
+  position: relative;
+}
+
+#heading-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
+}
+  </style>
+</head>
+<body>
+  <h1 id="heading-bg">Heading</h1>
+  
+  <p class="special-paragraph" id="paragraph-bg">
+    Paragraph
+  </p>
+</body>
+</html>

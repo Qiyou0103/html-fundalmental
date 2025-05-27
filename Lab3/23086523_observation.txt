@@ -1,0 +1,264 @@
+Task 1: Border Styling
+What You Did
+
+Created HTML page with <h1> and <p>
+
+Added borders using embedded CSS:
+
+css
+h1 { border-top: 3px solid red; border-bottom: 3px solid red; }  
+p { border-left: 1px solid red; border-right: 4px dotted green; /* etc */ }  
+Tested padding values (px, %, em)
+
+What You Observed
+
+Thicker borders (5px+) dominate visually
+
+dotted/dashed styles create texture
+
+Padding >20px significantly increases element size
+
+Explanation
+
+Border width controls visual weight
+
+Padding units:
+
+px for precision
+
+% for responsiveness
+
+Unique per-side borders create emphasis
+
+Conclusion
+Borders and padding are essential for:
+
+Visual hierarchy
+
+Content separation
+
+Responsive spacing
+
+Task 2: Image Implementation
+What You Did
+
+Added <img> tags with varied width/height
+
+Tested 7 cases (both dimensions set/not set)
+
+What You Observed
+
+Case	Behavior
+Only width set	Height auto-scaled
+No dimensions	Used native resolution
+Both set	Potential distortion
+Explanation
+
+Aspect ratio preserved when only one dimension specified
+
+Omitting dimensions loads full-size (may slow page)
+
+Conclusion
+Always set at least one dimension and use alt text for accessibility.
+
+Task 3: Vector Images
+What You Did
+
+Created logo in Inkscape → exported as PNG/SVG
+
+Tested scaling in HTML
+
+What You Observed
+
+SVG scaled perfectly at all sizes
+
+PNG became pixelated when enlarged
+
+Explanation
+
+Vector (SVG): Math-based → infinite scalability
+
+Raster (PNG): Pixel-based → fixed resolution
+
+Conclusion
+Use SVG for logos/icons, PNG for photos.
+
+Task 4: Background Images
+What You Did
+
+Created 6 background sizes (10x10px to 10x2000px)
+
+Tested with/without background-size: 100%
+
+What You Observed
+
+Small images (10x10) tiled seamlessly
+
+background-size:100% stretched images disproportionately
+
+Explanation
+
+Default background-repeat tiles patterns
+
+background-size overrides natural dimensions
+
+Conclusion
+Use tiling for patterns, cover/contain for full-page backgrounds.
+
+Task 5: Background Positioning
+What You Did
+
+Applied backgrounds to <h1> and <p>
+
+Tested background-repeat and background-position
+
+What You Observed
+
+repeat-x created horizontal stripes
+
+right center positioning aligned images perfectly
+
+Explanation
+
+Positioning values control image anchoring
+
+Repeat options optimize performance
+
+Conclusion
+Background positioning enhances design without extra HTML elements.
+
+Task 6: Complete Website Styling
+What You Did
+
+Styled Trillium Media Design page per Figure 6
+
+Implemented:
+
+Navigation bar
+
+Shadowed content area
+
+Fixed footer
+
+What You Observed
+
+Hover effects increased interactivity
+
+box-shadow created depth illusion
+
+Fixed footer required margin adjustments
+
+Explanation
+
+Visual feedback (hover) improves UX
+
+Shadows imply elevation hierarchy
+
+Conclusion
+Consistent styling transforms basic HTML into professional layouts.
+
+1. Resolution Fundamentals
+Definition:
+Resolution measures image detail, expressed as:
+
+PPI (Pixels Per Inch) for screens
+
+DPI (Dots Per Inch) for print
+
+Key Differences:
+
+Aspect	Screen (PPI)	Print (DPI)
+Standard	72-150 PPI	300+ DPI
+Purpose	Pixel density	Ink dot density
+File Size	Lower (72PPI typical)	Higher (300DPI min)
+Example Use	Websites	Magazine prints
+Application:
+
+Web images use 72PPI to balance quality/load speed
+
+Print materials require 300DPI+ to avoid pixelation
+
+2. Raster vs Vector Graphics
+Comparison:
+
+Feature	Raster (PNG/JPG)	Vector (SVG)
+Basis	Pixel grid	Mathematical formulas
+Scaling	Pixelates when enlarged	Infinitely scalable
+File Types	.png, .jpg, .gif	.svg, .eps, .ai
+Best For	Photos, complex images	Logos, icons, text
+Editable	Limited (pixel-based)	Fully (path-based)
+Identification by Extension:
+
+Raster: .png, .jpg, .gif, .webp, .bmp
+
+Vector: .svg, .eps, .ai, .pdf (sometimes)
+
+When to Use:
+
+Raster: Product photos, textures, gradients
+
+Vector: Logos, typography, infographics
+
+3. Color Types & Spaces
+Key Models:
+
+A. Additive (RGB)
+
+Used in: Screens (monitors, phones)
+
+How it works: Combines Red+Green+Blue light to create colors
+
+Color Space: sRGB (web standard), Adobe RGB (wider gamut)
+
+B. Subtractive (CMYK)
+
+Used in: Printing
+
+How it works: Cyan+Magenta+Yellow+Key(black) inks absorb light
+
+Color Space: SWOP (US print standard), FOGRA (Europe)
+
+Special Cases:
+
+Pantone: Pre-mixed ink colors for brand consistency
+
+Spot Colors: Single ink colors (e.g., metallic gold)
+
+Critical Differences:
+
+RGB Screen Colors	CMYK Print Colors
+Bright, vibrant	More muted
+Black = absence of light	Black = ink mixture
+Wider gamut for blues	Better at warm tones
+File Format Impact:
+
+Web: Always use RGB (#FF0000 or rgb(255,0,0))
+
+Print: Convert to CMYK before exporting
+
+Summary of Key Learnings
+Resolution:
+
+Higher DPI = better print quality
+
+Lower PPI = faster web loading
+
+Image Types:
+
+Raster for photos → .jpg (lossy), .png (lossless)
+
+Vector for graphics → .svg (scalable)
+
+Color Systems:
+
+Digital: RGB (additive)
+
+Print: CMYK (subtractive) + Pantone for exact matches
+
+Practical Applications:
+
+Design websites in RGB at 72PPI
+
+Export print materials in CMYK at 300DPI
+
+Use vectors for logos to ensure crisp scaling
